@@ -36,3 +36,10 @@ const rows = [
         console.log("Clicked:", event.target.textContent);
       }
     });
+
+
+
+  // maxguess
+  // win or lose
+  //new game 
+  
