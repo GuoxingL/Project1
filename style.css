@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+margin: 0; 
+padding: 0;
+background-size: cover; 
+background-repeat: no-repeat;
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("https://i.pinimg.com/originals/bf/fe/de/bffede1d81ebe6ddb2eb3033dc86ac68.gif");
+}
+#heading1 {
+font-size: 20px; 
+text-align: center;
+padding: 20px; 
+color: white;
+}
+#heading2{
+font-size: 15px; 
+text-align: center;
+padding: 20px; 
+color: white;
+  
+}
+.key{
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  margin: 2px;
+}
+.text-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: white;
+}
+.container {
+  font-size: 16px;
+  background-position: center;
+  background-image: url("https://wallpapercrafter.com/desktop1/516352-space-stars-galaxy-space-art-digital-art-night.jpg");
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+}
+#options {
+  text-align: center;
+}
+#options div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+#options button {
+  padding: 0.6em 1.2em;
+  border: 3px solid black;
+  background-color: white;
+  color:black;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+#options button:disabled {
+  border: 3px solid gray;
+  color: white;
+  background-color: white;
+}
+#options button.active {
+  background-color: lightblue;
+  border: 3px solid black;
+  color: white;
+}
+.letter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+#letter button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 0.3em;
+  background-color: white;
+  cursor: pointer;
+}
+.newGameShow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+#userInput {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+canvas {
+  display: block;
+  margin: auto;
+}
+.hide {
+  display: none;
+}
+#result h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+#result p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+  color: white;
+}
+#result span {
+  font-weight: 600;
+}
+#newGameB {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: black;
+  border: 3px solid black;
+  color: white;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.win {
+  color: yellow;
+}
+.lose{
+  color: black;
+}
