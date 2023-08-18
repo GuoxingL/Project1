@@ -1,4 +1,4 @@
-// Make keyboard
+// Make keyboard and reference code
 let letters = document.querySelectorAll(`.letter`);
 let input = document.querySelector("#input");
 let secret = document.querySelector(".secret");
@@ -9,9 +9,13 @@ let count = document.querySelector(".count");
 // List of words
 let words = ["apple", "peach", "banana","kiwi","mango","pear"];
 
-// Define variables - answer, guessed letters, etc.
+// Define variables 
 let answer = "";
 let newWord = [];
+// Event Listeners
+input.addEventListener("keydown", highlight);
+input.addEventListener("keyup", unClick);
+startBtn.addEventListener("click", createBlank);
 
 // Function to highlight guessed letters and update the game state
 function highlight(e) {
@@ -25,7 +29,7 @@ function highlight(e) {
         // If answer is right, it will change color 
         letters[i].style.background = "white";
 
-        // Find all occurrences of the pressed key 
+        // Find all pop up of the pressed key (when you tap letter on keyborad it will pop up on screen keybroad)
         function finder() {
           let index = answer.indexOf(curLet.innerHTML);
           while (index != -1) {
@@ -112,10 +116,6 @@ function clearBoardStyles() {
   clearResultMessage();
 }
 
-// Event Listeners
-input.addEventListener("keydown", highlight);
-input.addEventListener("keyup", unClick);
-startBtn.addEventListener("click", createBlank);
 
 // Start a new game when the page loads
 createBlank();
