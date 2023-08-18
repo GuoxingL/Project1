@@ -3,7 +3,7 @@
 
 This is the spaceman game that you are going to play, it is a game of word guessing. As a result, if the player does not guess the letters of the word in a certain number of guesses, the player will lose the game.
 
-![Imgur](https://i.imgur.com/Fpf2p9I.jpg[/img]")
+![Imgur](https://i.imgur.com/0f56a2N.jpg[/img])
 
 
 # How to Play
@@ -17,22 +17,23 @@ There will be a random word that you will have to guess the letters of. It is al
 
 # Main features
 * Has audio music on background 
-* if you guess letter wrong, game will start draw part of spaceman
+* if you guess letter wrong, word count will drop down 1
 * Show used letters and remain letters on keyboard you cannot be select anymore
+* right or worng will pop different color
 
 # Player Stories
-* As a player, I should be able to start game
-* As a player, I should be able to select another category  word
+* As a player, I should be able to see right word pop out
 * As a player, I should be able to continue play game once i got lose or win
 * As a player, I should be able to play the game again without refresh page
 * As a player, I should be able know guess letter is right or wrong 
 
 # Source 
 * Google Font: Poppins
-* Background image :"https://wallpapercrafter.com/desktop1/516352-space-stars-galaxy-space-art-digital-art-night.jpg"
-"https://i.pinimg.com/originals/bf/fe/de/bffede1d81ebe6ddb2eb3033dc86ac68.gif"
+* Background image :"https://www.shutterstock.com/image-photo/astronaut-spaceman-do-spacewalk-while-260nw-1917684617.jpg"
 * Music:"river flows in you"
 * youtube:"https://www.youtube.com/watch?v=ZFb_eaYtWwY"
+           "https://www.youtube.com/watch?v=YUdc2szWz8Q"
+           "https://www.youtube.com/watch?v=PkTvok9acNk"
 
 # Stretch goals
 * Better animation

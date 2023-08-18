@@ -1,35 +1,78 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spaceman</title>
-  <link
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaceman Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+      <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
     rel="stylesheet"
   />
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-<div class="text-overlay">
-        <h1>Welcome to the Spaceman</h1>
-  <p>Your journey begins here...</p>
-  <audio autoplay loop controls>
-    <source src="music/Yiruma-RiverFlowsInYou.mp3" type="audio/mp3"></audio>
-    </div>
+  </head>
+    <div class="text-overlay">
+          <h3>Welcome to the Spaceman</h3>
+    <p>Your journey begins here...</p>
+          <audio controls loop>
+      <source src="music/Yiruma-RiverFlowsInYou.mp3" type="audio/mp3"></audio>
       </div>
-<body>
-  <div class="container">
-    <div id="heading1">Make your adventure one of these</div>
-    <div id="heading2">Hint: 6 chances to guess word</div>
-    <div id="options"></div>
-    <div id="keyboard"></div>
-    <div id="letter" class="letterHide"></div>
-    <div id="userInput"></div>
-            <img id="spaceship-image" src="https://66.media.tumblr.com/5c56bf25fafc43d473d73cb4da4a35fe/tumblr_mfi0zq4lkO1rfjowdo1_500.gif" alt="Spaceship" />
-    <canvas id="canvas"></canvas>
-    <div id="newGame" class="newGameShow">
-      <div id="result"></div>
-      <button id="newGameB">New Game</button>
+        </div>
+  <body>
+    <div class="group">
+      <div class="guessCount">
+        <!-- //Displays the left number of guesses  -->
+        
+       Guess Count: <span class="left">6</span>
+      </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <main class ="container">
+      <div class ="word">
+        <h3>Hint:Type Letters only(Fruit)</h3>
+         <h3 class="secret"></h3>
+      </div>
+      <div class="top row">
+        <div class="letter" data-letter="a">a</div>
+        <div class="letter" data-letter="b">b</div>
+        <div class="letter" data-letter="c">c</div>
+        <div class="letter" data-letter="d">d</div>
+        <div class="letter" data-letter="e">e</div>
+        <div class="letter" data-letter="f">f</div>
+        <div class="letter" data-letter="g">g</div>
+        <div class="letter" data-letter="h">h</div>
+        <div class="letter" data-letter="i">i</div>
+        <div class="letter" data-letter="j">j</div>
+      </div>
+      <div class="mid row">
+        <div class="letter" data-letter="k">k</div>
+        <div class="letter" data-letter="l">l</div>
+        <div class="letter" data-letter="m">m</div>
+        <div class="letter" data-letter="n">n</div>
+        <div class="letter" data-letter="o">o</div>
+        <div class="letter" data-letter="p">p</div>
+        <div class="letter" data-letter="q">q</div>
+        <div class="letter" data-letter="r">r</div>
+        <div class="letter" data-letter="s">s</div>
+      </div>
+      <div class="bot row">
+        <div class="letter" data-letter="t">t</div>
+        <div class="letter" data-letter="u">u</div>
+        <div class="letter" data-letter="v">v</div>
+        <div class="letter" data-letter="w">w</div>
+        <div class="letter" data-letter="x">x</div>
+        <div class="letter" data-letter="y">y</div>
+        <div class="letter" data-letter="z">z</div>
+      </div>
+
+      <div class="inputPart">
+        <label for="input"></label>
+        <input type="text" id="input" autofocus="autofocus" />
+        <div class="result-section">
+  <p id="result" class="result-text"></p>
+</div>
+        <button class="start">New Game</button>
+      </div>
+    </main>
+  </body>
 </html>
